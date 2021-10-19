@@ -6,6 +6,7 @@ turn it off. That's the reason this environment is OK to have discreet actions (
 
 Properties:
 The landing pad is always at coordinates (0,0). 
+
 The coordinates are the first two numbers in the state vector.
 Reward for moving from the top of the screen to the landing pad and zero speed is about 100..140 points.
 If the lander moves away from the landing pad it loses reward. 
