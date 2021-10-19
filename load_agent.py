@@ -2,13 +2,13 @@
 from tensorflow.keras.optimizers import Adam
 
 # Import architectures.
-from architectures.model_architecure import *
-from architectures.dqn_architecture import *
+from model_architecure import *
+from dqn_architecture import *
 
 # Import simulations.
-from simulations.lander import *
-from simulations.main_engine_failure import *
-from simulations.side_engine_failure import *
+from lander import *
+from main_engine_failure import *
+from side_engine_failure import *
 
 # Main function.
 if __name__ == "__main__":
@@ -40,7 +40,7 @@ if __name__ == "__main__":
     steps = "agent"
     file_name = str(steps) + '.h5'
     dqn.load_weights(file_name)
-    print("\nThe agent trained for " + str(282) + " times is loaded from disk.\n")
+    print("\nThe agent is loaded from disk.\n")
 
     # Test agent.
     print("\nEpisode Reports: \n")
