@@ -27,7 +27,7 @@ import argparse
 import os
 
 # Initialize simulator.
-env = gym.make('LunarLander-v2')
+env = LunarLander()
 env.seed(0)
 np.random.seed(0)
 
